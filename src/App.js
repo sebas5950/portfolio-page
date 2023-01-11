@@ -11,7 +11,10 @@ import {Routes, Route} from "react-router-dom"
 function App() {
   return (
     <div className="App">
-      <NavBar />
+      <div class="container-medium">
+        <NavBar />
+      </div>
+        <div class="d-flex flex-column min-vh-100">
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/projects" element={<Projects />} />
@@ -19,6 +22,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      </div>
       <Footer />
     </div>
   );
